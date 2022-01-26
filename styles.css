@@ -12,7 +12,7 @@
   --clr-white: hsl(0, 0%, 100%);
   --clr-paragraph: hsla(0, 0%, 100%, 0.75);
   --clr-heading: hsla(0, 0%, 100%, 0.6);
-  --ff-family-1: "Inter", cursive;
+  --ff-family-1: "Inter", sans-serif;
   --ff-family-2: "Lexend Deca", "sans-serif";
   --light-font-weight: 400;
   --deep-font-weight: 700;
@@ -104,6 +104,7 @@ body {
     display: grid;
     justify-content: center;
     align-items: center;
+    width: 90vw;
   }
   .main {
     display: flex;
@@ -114,6 +115,7 @@ body {
     /* margin-bottom: 6rem; */
     margin-left: auto;
     margin-right: auto;
+    flex-direction: row-reverse;
   }
   .one {
     /* justify-content: flex-end; */
@@ -129,12 +131,14 @@ body {
     text-align: start;
   }
   .img-cont {
-    border-top-right-radius: 0;
-    border-bottom-left-radius: 0.5rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0.5rem;
   }
   .image {
-    border-top-right-radius: 0;
-    border-bottom-left-radius: 0.5rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0.5rem;
     display: block;
   }
   .two {
